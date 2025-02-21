@@ -1,0 +1,11 @@
+package com.Project.web_front.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+
+import com.Project.web_front.repositories.CategoryRepository;
+
+public class CategoryService {
+	@Autowired
+	CategoryRepository categoryRepository;
+}

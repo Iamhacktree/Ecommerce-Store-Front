@@ -1,0 +1,28 @@
+package com.Project.web_front.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Project.web_front.model.Product;
+import com.Project.web_front.service.ProductService;
+
+@RestController
+@RequestMapping("api/products")
+public class ProductController {
+	
+	@Autowired
+	ProductService productService;
+	
+	@GetMapping("/all")
+	public List<Product> getAllProducts(){
+		return productService.getAllProducts();
+	}
+	
+	public List<Product> getProductByCategory(Long categoryId){
+		return productService.getProductByCategory(categoryId);
+	}
+}
