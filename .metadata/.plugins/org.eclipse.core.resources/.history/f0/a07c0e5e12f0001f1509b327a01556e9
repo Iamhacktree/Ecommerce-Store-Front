@@ -1,9 +1,0 @@
-package com.Project.web_front.repositories;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.Project.web_front.model.Product;
-
-public interface ProductRepository extends JpaRepository<Product, Long>{
-
-}

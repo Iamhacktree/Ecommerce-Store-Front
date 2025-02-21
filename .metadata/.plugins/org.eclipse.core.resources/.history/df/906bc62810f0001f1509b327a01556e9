@@ -1,9 +1,0 @@
-package com.Project.web_front.repositories;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.Project.web_front.model.Category;
-
-public interface CategoryRepository extends JpaRepository<Category, Long>{
-
-}
